@@ -1,5 +1,4 @@
 <?php
-
 $db_host = '127.0.0.1';
 $db_name = 'gusmini_gym';
 $db_user = 'root';
@@ -19,5 +18,6 @@ function getPDO($withDb = true) {
         die('Errore connessione DB: ' . htmlspecialchars($e->getMessage()));
     }
 }
+
 ?>
 

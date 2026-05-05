@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = isset($_POST['user']) ? $_POST['user'] : '';
     $pass = isset($_POST['pass']) ? $_POST['pass'] : '';
     if ($user === 'gusmini' && $pass === 'verifica') {
+        // login OK
         $_SESSION['user'] = 'gusmini';
         header('Location: dashboard.php');
         exit;

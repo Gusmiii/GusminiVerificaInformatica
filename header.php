@@ -22,11 +22,9 @@ function require_login() {
         <?php if (isset($_SESSION['user']) && $_SESSION['user'] === 'gusmini'): ?>
             <nav class="main-nav">
                 <a href="dashboard.php">Home</a>
-                <a href="add_enrollment.php">Nuova Iscrizione</a>
-                <a href="view_instructor_max.php">Corso principale per istruttore</a>
+                <a href="aggiungi_iscrizione.php">Nuova Iscrizione</a>
                 <a href="view_course_members.php">Iscritti per corso</a>
                 <a href="full_report.php">Report completo</a>
-                <a href="logout.php">Logout</a>
             </nav>
         <?php endif; ?>
     </div>
